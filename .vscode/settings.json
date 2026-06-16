@@ -1,0 +1,18 @@
+{
+  "emmet.syntaxProfiles": {},
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "vue": "html"
+  },
+  "emmet.preferences": {
+    "css.propertyEnd": ";"
+  }
+}
