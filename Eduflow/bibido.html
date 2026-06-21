@@ -9,6 +9,7 @@
 
   <body>
     <header
+      class="bg-[#264E70]/75 w-300 h-auto mr-auto ml-auto mt-5 rounded-2xl shadow-lg"
     >
       <nav class="mx-auto flex items-center justify-between p-3">
         <!-- Logo -->
@@ -24,16 +25,42 @@
         <div
           class="flex font-mono text-[18px] font-semibold line tracking-wide lg:flex-2 lg:gap-x-10"
         >
-          <a href="bibido.html" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
+          <a href="#" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
           <div class="flex items-center">
-            <a href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
+            <button href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
               Materi Kuliah
-            </a>
+            </button>
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-5 flex-none in-aria-expanded:rotate-180 text-white"
+            >
+              <path
+                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+              />
+            </svg>
           </div>
           <div class="flex items-center">
-            <a href="profilek4.html" class="text-[#FFFFFF] no-underline text-shadow-md">
-              Profile K4
-            </a>
+            <button href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
+              Lecture Note
+            </button>
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-5 flex-none in-aria-expanded:rotate-180 text-white"
+            >
+              <path
+                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+              />
+            </svg>
           </div>
           <div class="flex items-center">
             <button href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
@@ -59,7 +86,7 @@
         <div class="flex gap-x-3 mr-10 text-shadow-md">
           <img
             class="h-11 w-11 rounded-full bg-gray-50 border-2 border-indigo-600 shadow-md"
-            src="SELEE.jpg"
+            src="/Akarin(frmwrk)/SELEE.jpg"
             alt=""
             />
             <div class="font-mono text-[12px] font-semibold line">
@@ -98,5 +125,94 @@
       </div>
       <img src="Students studying.png" class="w-145 h-107 shadow-lg rounded-md mt-10"/>
     </section>
+
+    <!--Card-->
+      <div class="flex flex-wrap gap-4 p-2 w-full max-w-[1225px] mx-auto mt-20 justify-center items-center">
+        <article class="flex-1 min-w-[220px] max-w-[280px] bg-white rounded-[16px] p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
+          <img src="Rectangle_6.png" alt="Kalkulus Differensial" class="w-full rounded-[15px] object-cover" />
+          <h3 class="text-[25px] mt-3 text-left">Kalkulus Differensial</h3>
+          <p class="mt-2 text-sm text-slate-600">Lorem ipsum dolor sit amet, consectetur...</p>
+          <button class="bg-[#2F39A1] tracking-wide font-mono text-white p-2 mt-4 rounded-xl"> Learn More </button>
+        </article>
+        <article class="flex-1 min-w-[220px] max-w-[280px] bg-white rounded-[16px] p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
+          <img src="Rectangle_7.png" alt="Kimia" class="w-full rounded-[15px] object-cover" />
+          <h3 class="text-[25px] mt-3 text-left">Kimia</h3>
+          <p class="mt-2 text-sm text-slate-600">Lorem ipsum dolor sit amet, consectetur...</p>
+          <button class="bg-[#2F39A1] tracking-wide font-mono text-white p-2 mt-4 rounded-xl"> Learn Mores </button>
+        </article>
+        <article class="flex-1 min-w-[220px] max-w-[280px] bg-white rounded-[16px] p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
+          <img src="Rectangle_8.png" alt="E-Commerce" class="w-full rounded-[15px] object-cover" />
+          <h3 class="text-[25px] mt-3 text-left">E-Commerce</h3>
+          <p class="mt-2 text-sm text-slate-600">Lorem ipsum dolor sit amet, consectetur...</p>
+          <button class="bg-[#2F39A1] tracking-wide font-mono text-white p-2 mt-4 rounded-xl"> Learn More </button>
+        </article>
+        <article class="flex-1 min-w-[220px] max-w-[280px] bg-white rounded-[16px] p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
+          <img src="Rectangle_9.png" alt="Fisika" class="w-full rounded-[15px] object-cover" />
+          <h3 class="text-[25px] mt-3 text-left">Fisika</h3>
+          <p class="mt-2 text-sm text-slate-600">Lorem ipsum dolor sit amet, consectetur...</p>
+          <button class="bg-[#2F39A1] tracking-wide font-mono text-white p-2 mt-4 rounded-xl"> Learn More </button>
+        </article>
+      </div>
+
+                <footer class="bg-[#002244] text-white font-mono mt-20 w-full pt-16 pb-8">
+      <div class="max-w-306.25 mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        
+        <div class="flex flex-col gap-4">
+          <div class="text-[24px] font-semibold tracking-wider">
+            <span>Edu</span><span class="text-[#8CF9EB]">Flow</span>
+          </div>
+          <p class="text-[13px] text-gray-300 leading-relaxed max-w-62.5">
+            Empowering students with reliable, expert-verified academic materials to excel in their university journey.
+          </p>
+          <div class="flex gap-3 mt-2">
+            <span class="w-8 h-8 rounded-full bg-[#0E3A66] flex items-center justify-center text-sm cursor-pointer hover:bg-opacity-80">🌐</span>
+            <span class="w-8 h-8 rounded-full bg-[#0E3A66] flex items-center justify-center text-sm cursor-pointer hover:bg-opacity-80">🔗</span>
+            <span class="w-8 h-8 rounded-full bg-[#0E3A66] flex items-center justify-center text-sm cursor-pointer hover:bg-opacity-80">✉️</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-[16px] font-semibold mb-4 tracking-wide text-white">Products</h3>
+          <ul class="space-y-2.5 text-[13px] text-gray-300">
+            <li><a href="#" class="hover:text-white transition">Study Guides</a></li>
+            <li><a href="#" class="hover:text-white transition">Lecture Notes</a></li>
+            <li><a href="#" class="hover:text-white transition">Research Repository</a></li>
+            <li><a href="#" class="hover:text-white transition">Expert Consult</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-[16px] font-semibold mb-4 tracking-wide text-white">Support</h3>
+          <ul class="space-y-2.5 text-[13px] text-gray-300">
+            <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="#" class="hover:text-white transition">Community Forum</a></li>
+            <li><a href="#" class="hover:text-white transition">Academic Integrity</a></li>
+            <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-[16px] font-semibold mb-4 tracking-wide text-white">Legal</h3>
+          <ul class="space-y-2.5 text-[13px] text-gray-300">
+            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">DMCA Notice</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="max-w-306.25 mx-auto px-6 mt-12">
+        <hr class="border-[#0E3A66]" />
+        <div class="flex flex-col sm:flex-row justify-between items-center pt-6 text-[12px] text-gray-400 gap-4">
+          <p>© 2026 EduFlow Academic. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-white transition">English</a>
+            <a href="#" class="hover:text-white transition">Bahasa Indonesia</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
