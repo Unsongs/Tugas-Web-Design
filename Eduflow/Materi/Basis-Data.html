@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduFlow</title>
+    <title>Materi</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
   <body>
-    <!--navbar-->
+        
     <header
       class="bg-[#264E70] w-300 h-auto mr-auto ml-auto mt-5 rounded-2xl shadow-lg z-1000 sticky top-5"
     >
@@ -26,11 +26,11 @@
         <div
           class="flex font-mono text-[18px] font-semibold line tracking-wide lg:flex-2 lg:gap-x-10"
         >
-          <a href="bibido.html" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
-            <a href="ListMtkul.html" class="text-[#FFFFFF] no-underline text-shadow-md">
+          <a href="../bibido.html" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
+            <a href="../ListMtkul.html" class="text-[#FFFFFF] no-underline text-shadow-md">
               Materi Kuliah
             </a>
-            <a href="profilek4.html" class="text-[#FFFFFF] no-underline text-shadow-md">
+            <a href="../profilek4.html" class="text-[#FFFFFF] no-underline text-shadow-md">
               Profile K4
             </a>
           <div class="relative">
@@ -61,7 +61,7 @@
         <div class="flex gap-x-3 mr-10 text-shadow-md">
           <img
             class="h-11 w-11 rounded-full bg-gray-50 border-2 border-indigo-600 shadow-md"
-            src="Assets/SELEE.jpg"
+            src="../Assets/SELEE.jpg"
             alt=""
             />
             <div class="font-mono text-[12px] font-semibold line">
@@ -77,126 +77,26 @@
         </div>
       </nav>
     </header>
-
-    <!--hero-->
-    <section class="mr-auto ml-auto bg-transparent flex items-center justify-between mt-6 max-w-290.25">
-      <div class="mr-5 ml-5 max-w-165">
-        <h1 class="text-[32px] font-mono font-semibold leading-10 tracking-wider mt-15 text-shadow-md">
-          Selamat Datang di Edu<span class="text-[#2F39A1]">Flow</span>, <span class="text-[#0F4C81]">arsip materi Perkuliahan</span>
-        </h1>
-        <p class="text-[18px] font-mono font-normal leading-6 tracking-wide mt-15 text-shadow-md">
-        Akses Materi kuliah secara gratis dan simple! 
-        kamu juga bisa melihat lecture notes di setiap materi kuliah. 
-        Ayo bergabung dengan komunitas EduFlow!
-      </p>
-        <div class="flex gap-x-14 items-center mt-15">
-          <a href="ListMtkul.html">
-            <button href="#" class="bg-[#0F4C81] text-white font-mono px-4 py-2 rounded-md p-6 tracking-wider shadow-lg hover:bg-[rgb(208,249,255)] hover:text-black">
-          </ahref>
-            Explore Materials
-          </button>
-          <a href="profilek4.html">
-            <button class="bg-[#bafff6] text-black font-mono px-4 py-2 rounded-md p-6 tracking-wider shadow-lg hover:bg-[#150054] hover:text-white">
-              Profile Kelompok 4
-            </button>
-          </a>
+    
+    <!--breadcrumbs-->
+        <div class= "flex items-center text-lg gap-x-1 max-w-290.25 ml-auto mr-auto mt-10 font-mono">
+         <a href="../ListMtkul.html" class="text-[#42474F] hover:text-[#8bc4f9]">Materi Kuliah</a>
+         <span class="text-[#42474F]">&gt;</span>
+         <a href="#" class="text-[#00355F]">Basis Data</a>
         </div>
-      </div>
-      <img src="Assets/Students studying.png" class="w-145 h-107 shadow-lg rounded-md mt-10"/>
-    </section>
 
-    <!--Card-->
-      <div class="flex flex-wrap gap-4 p-2 w-full max-w-290.25 mx-auto mt-20 justify-center items-center">
-        <article class="flex flex-col justify-between flex-1 min-h-105 min-w-55 max-w-70 bg-white rounded-2xl p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
-          <img src="Assets/Rectangle 6.png" alt="Kalkulus Differensial" class="w-full rounded-[15px] object-cover" />
-          <h3 class="text-[25px] mt-3 text-left">Perancangan Web</h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Merancang website menggunakan bahasa HTML dan CSS dan kombinasi Javascript untuk menciptakan website yang hidup, bewarna, responsif, interaktif sesuai kreativitas kita!
-          </p>
-          <a href="Materi/Perancangan-Web.html">
-            <button class="bg-[#2F39A1] tracking-wide font-mono text-white hover:bg-[#bac0ff] hover:text-black p-2 mt-4 rounded-xl shadow-lg"> Learn More </button>
-          </a>
-        </article>
-        <article class="flex flex-col justify-between flex-1 min-h-105 min-w-55 max-w-70 bg-white rounded-2xl p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
-          <img src="Assets/Rectangle 7.png" alt="Kimia" class="w-full rounded-[15px] object-cover" />
-          <h3 class="text-[25px] mt-3 text-left">Basis Data</h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Pangkalan data yang saling terhubung, table-table yang memiliki atribut khas yang saling berelasi! ayo pelajari basis data!
-          </p>
-          <a href="Materi/Basis-Data.html">
-            <button class="bg-[#2F39A1] tracking-wide font-mono text-white hover:bg-[#bac0ff] hover:text-black p-2 mt-4 rounded-xl shadow-lg"> Learn More </button>
-          </a>
-        </article>
-        <article class="flex flex-col justify-between flex-1 min-h-105 min-w-55 max-w-70 bg-white rounded-2xl p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
-          <img src="Assets/Rectangle_8.png" alt="E-Commerce" class="w-full rounded-[15px] object-cover" />
-          <h3 class="text-[25px] mt-3 text-left">E-Commerce</h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Pelajari bagaimana transaksi digital bekerja, apa itu uang digital dan keamanan dalam bertransaksi digital, serta cara kerja SCM, ERP, dan CRM dan bagaimana mereka saling bergantung
-          </p>
-          <a href="Materi/E-commerce.html">
-            <button class="bg-[#2F39A1] tracking-wide font-mono text-white hover:bg-[#bac0ff] hover:text-black p-2 mt-4 rounded-xl shadow-lg"> Learn More </button>
-          </a>
-        </article>
-        <article class="flex flex-col justify-between flex-1 min-h-105 min-w-55 max-w-70 bg-white rounded-2xl p-4 shadow-[0_8px_10px_rgba(0,0,0,0.08)] box-border">
-          <img src="Assets/Rectangle 9.png" alt="Fisika" class="w-full rounded-[15px] object-cover" />
-          <h3 class="text-[25px] mt-3 text-left">Jaringan Komputer II</h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Pelajari tentang IP Address, konfigurasi static routing, konfigurasi dynamic routing, fungsi Firewall dan bagaimana alur kerja perangkat mengakses internet 
-          </p>
-          <a href="Materi/Jaringan-Komputer.html">
-            <button class="bg-[#2F39A1] tracking-wide font-mono text-white hover:bg-[#bac0ff] hover:text-black p-2 mt-4 rounded-xl shadow-lg"> Learn More </button>
-          </a>
-        </article>
-      </div>
-
-      <!-- List Populer-->
-      <div class="max-w-290.25 mx-auto mt-12 font-mono">
-	<h2 class="text-[34px] mb-8 font-bold">Daftar Materi Populer</h2>
-	<div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-6">
-		<aside class="bg-white p-7 rounded-[14px] shadow">
-			<h3 class="mb-4 font-semibold">Categories</h3>
-			<div class="flex flex-col gap-4">
-
-				<label class="flex items-center gap-2.5 text-sm cursor-pointer">
-					<input type="checkbox">
-					<span>Network Engineering</span>
-				</label>
-
-				<label class="flex items-center gap-2.5 text-sm cursor-pointer">
-					<input type="checkbox">
-					<span>Database Management</span>
-				</label>
-
-				<label class="flex items-center gap-2.5 text-sm cursor-pointer">
-					<input type="checkbox">
-					<span>Network Administration</span>
-				</label>
-
-				<label class="flex items-center gap-2.5 text-sm cursor-pointer">
-					<input type="checkbox">
-					<span>Programming & Coding</span>
-				</label>
-
-			</div>
-
-			<div class="mt-10">
-				<h3 class="mb-3 font-semibold">Resource Type</h3>
-				<div class="flex flex-wrap gap-2.5">
-					<button class="px-4 py-2 rounded-full bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">Video</button>
-					<button class="px-4 py-2 rounded-full bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">E-book</button>
-					<button class="px-4 py-2 rounded-full bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">PDF</button>
-				</div>
-			</div>
-
-		</aside>
-
-		<section class="bg-white p-4 rounded-[14px] shadow">
-
+        <!--Headline-->
+    <h1 class="max-w-290.25 ml-auto mr-auto mt-8 font-mono text-black font-extrabold text-[32px]">
+           Materi Basis Data
+         </h1>
+    
+    <!--Table-->
+	<section class="bg-white p-4 rounded-[14px] shadow mt-8 w-290.25 ml-auto mr-auto font-mono">
 			<table class="w-full table-auto">
 				<thead>
 					<tr class="border-b-2 border-[#eef2f7]">
 						<th class="text-left p-4 text-[#5f7084]">Nama Materi</th>
-						<th class="text-left p-4 text-[#5f7084]">Kode</th>
+						<th class="text-left p-4 text-[#5f7084]">BAB</th>
 						<th class="text-left p-4 text-[#5f7084]">Dosen</th>
 						<th class="text-left p-4 text-[#5f7084]">Terakhir Update</th>
 						<th class="text-left p-4 text-[#5f7084]"></th>
@@ -207,55 +107,17 @@
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="Isi-materi/isi.html" class="hover:text-indigo-600">Interaction Design</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Pengantar Basis Data</a>
 							</div>
 						</td>
-						<td class="px-4 py-5">MAT121</td>
-						<td class="px-4 py-5">Prof. Rizki</td>
+						<td class="px-4 py-5">1</td>
+						<td class="px-4 py-5">Prof. Yoga</td>
 						<td class="px-4 py-5">Oct 12, 2023</td>
             <td class="px-4 py-5 text-center">
-              <a href="Materi-download/test.txt" download="text.txt">
-                <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                  <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-                </button>
-              </a>
-						</td>
-					</tr>
-
-					<tr class="border-b border-[#eef2f7]">
-						<td class="px-4 py-5">
-							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="Isi-materi/isi.html" class="hover:text-indigo-600">Static Routing</a>
-							</div>
-						</td>
-						<td class="px-4 py-5">INF201</td>
-						<td class="px-4 py-5">Dr. Sarah Chan</td>
-						<td class="px-4 py-5">Nov 16, 2023</td>
-            <td class="px-4 py-5 text-center">
-              <a href="Materi-download/test.txt" download="text.txt">
-                <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                  <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-                </button>
-              </a>
-						</td>
-					</tr>
-
-					<tr class="border-b border-[#eef2f7]">
-						<td class="px-4 py-5">
-							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="Isi-materi/isi.html" class="hover:text-indigo-600">Store Procedure & Trigger</a>
-							</div>
-						</td>
-						<td class="px-4 py-5">NET301</td>
-						<td class="px-4 py-5">Prof. Ridho</td>
-						<td class="px-4 py-5">Jan 18, 2024</td>
-            <td class="px-4 py-5 text-center">
-                            <a href="Materi-download/test.txt" download="text.txt">
+                            <a href="../Materi-download/test.txt" download="text.txt">
                               <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
                               </button>
               </a>
 						</td>
@@ -264,17 +126,55 @@
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="Isi-materi/isi.html" class="hover:text-indigo-600">Mikrotik Firewall</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Penerapan & Komponen Basis Data</a>
 							</div>
 						</td>
-						<td class="px-4 py-5">INF204</td>
+						<td class="px-4 py-5">1</td>
+						<td class="px-4 py-5">Dr. Sarah Chan</td>
+						<td class="px-4 py-5">Nov 16, 2023</td>
+            <td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>
+
+					<tr class="border-b border-[#eef2f7]">
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Bahasa & Hirarki Basis Data</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">2</td>
+						<td class="px-4 py-5">Prof. Ridho</td>
+						<td class="px-4 py-5">Jan 18, 2024</td>
+            <td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>
+
+					<tr class="border-b border-[#eef2f7]">
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Entity Relationship Diagram (ERD)</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">2</td>
 						<td class="px-4 py-5">Dr. Dinda</td>
 						<td class="px-4 py-5">Feb 20, 2024</td>
             <td class="px-4 py-5 text-center">
-                            <a href="Materi-download/test.txt" download="text.txt">
+                            <a href="../Materi-download/test.txt" download="text.txt">
                               <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
                               </button>
               </a>
 						</td>
@@ -283,17 +183,72 @@
 					<tr>
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="Isi-materi/isi.html" class="hover:text-indigo-600">Class, Id & Atribut CSS</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Structured Query Language (SQL)</a>
 							</div>
 						</td>
-						<td class="px-4 py-5">LAW410</td>
+						<td class="px-4 py-5">3</td>
 						<td class="px-4 py-5">Prof. Umi</td>
 						<td class="px-4 py-5">Mar 04, 2024</td>
-            <td class="px-4 py-5 text-center">
-                            <a href="Materi-download/test.txt" download="text.txt">
+						<td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
                               <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>								
+          
+          <tr>
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Query & Privileges</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">3</td>
+						<td class="px-4 py-5">Prof. Umi</td>
+						<td class="px-4 py-5">Mar 04, 2024</td>
+						<td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>          
+          <tr>
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Backup and Restore</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">3</td>
+						<td class="px-4 py-5">Prof. Umi</td>
+						<td class="px-4 py-5">Mar 04, 2024</td>
+						<td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>
+           <tr>
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Store Procedure & Trigger</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">3</td>
+						<td class="px-4 py-5">Prof. Umi</td>
+						<td class="px-4 py-5">Mar 04, 2024</td>
+						<td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
                               </button>
               </a>
 						</td>
@@ -303,16 +258,15 @@
 			</table>
 
 			<div class="flex justify-between items-center pt-5 text-[#7a8797]">
-				<span>Showing 1–5 of 15 entries</span>
+				<span>Showing 1 to 8 of 2 entries</span>
 				<div class="flex gap-2.5">
-					<button class="w-9 h-9 rounded-md bg-[#eef3fb] hover:bg-[#0d6efd]">1</button>
-					<button class="w-9 h-9 rounded-md bg-[#eef3fb] hover:bg-[#0d6efd]">2</button>
-					<button class="w-9 h-9 rounded-md bg-[#eef3fb] hover:bg-[#0d6efd]">3</button>
+					<button class="w-9 h-9 rounded-md bg-[#0d6efd] text-white">1</button>
+					<button class="w-9 h-9 rounded-md bg-[#eef3fb]">2</button>
+					<button class="w-9 h-9 rounded-md bg-[#eef3fb]">3</button>
 				</div>
 			</div>
 
 		</section>
-</div>
 
     <script>
       const contactButton = document.getElementById('contactButton');
@@ -333,7 +287,7 @@
       }
     </script>
 
- <!--footer-->
+    <!--footer-->
           <footer class="bg-[#002244] text-white font-mono mt-20 w-full pt-16 pb-8">
       <div class="max-w-306.25 mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         

@@ -9,8 +9,8 @@
 
   <body>
         
-    <header
-      class="bg-[#264E70]/75 w-300 h-auto mr-auto ml-auto mt-5 rounded-2xl shadow-lg"
+<header
+      class="bg-[#264E70] w-300 h-auto mr-auto ml-auto mt-5 rounded-2xl shadow-lg z-1000 sticky top-5"
     >
       <nav class="mx-auto flex items-center justify-between p-3">
         <!-- Logo -->
@@ -26,34 +26,34 @@
         <div
           class="flex font-mono text-[18px] font-semibold line tracking-wide lg:flex-2 lg:gap-x-10"
         >
-          <a href="bibido.html" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
-          <div class="flex items-center">
-            <a href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
+          <a href="../bibido.html" class="text-[#FFFFFF] no-underline text-shadow-md">Home</a>
+            <a href="../ListMtkul.html" class="text-[#FFFFFF] no-underline text-shadow-md">
               Materi Kuliah
             </a>
-          </div>
-          <div class="flex items-center">
-            <a href="profilek4.html" class="text-[#FFFFFF] no-underline text-shadow-md">
+            <a href="../profilek4.html" class="text-[#FFFFFF] no-underline text-shadow-md">
               Profile K4
             </a>
-          </div>
-          <div class="flex items-center">
-            <button href="#" class="text-[#FFFFFF] no-underline text-shadow-md">
+          <div class="relative">
+            <button id="contactButton" type="button" class="flex items-center gap-1 text-[#FFFFFF] no-underline text-shadow-md">
               Contact
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 text-white"
+              >
+                <path
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                />
+              </svg>
             </button>
-            <svg
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              data-slot="icon"
-              aria-hidden="true"
-              class="size-5 flex-none in-aria-expanded:rotate-180 text-white"
-            >
-              <path
-                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-              />
-            </svg>
+            <div id="contactMenu" class="absolute right-0 mt-2 hidden min-w-65 bg-white shadow-lg">
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" class="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-100">WhatsApp : +1 823769123</a>
+              <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-100">Instagram</a>
+              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" class="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-100">LinkedIn</a>
+            </div>
           </div>
         </div>
 
@@ -61,7 +61,7 @@
         <div class="flex gap-x-3 mr-10 text-shadow-md">
           <img
             class="h-11 w-11 rounded-full bg-gray-50 border-2 border-indigo-600 shadow-md"
-            src="SELEE.jpg"
+            src="../Assets/SELEE.jpg"
             alt=""
             />
             <div class="font-mono text-[12px] font-semibold line">
@@ -79,26 +79,22 @@
     </header>
 
     <!--breadcrumbs-->
-    <section class="mt-10 ml-15">
-        <div class= "flex items-center text-lg gap-x-1">
-         <a href="#" class="text-[#42474F]">Materi Kuliah</a>
-         <span class="text-[#42474F]">\</span>
-         <a href="#" class="text-[#00355F]">E-Commerce</a>
+        <div class= "flex items-center text-lg gap-x-1 max-w-290.25 ml-auto mr-auto mt-10 font-mono">
+         <a href="../ListMtkul.html" class="text-[#42474F] hover:text-[#8bc4f9]">Materi Kuliah</a>
+         <span class="text-[#42474F]">&gt;</span>
+         <a href="#" class="text-[#00355F]">Perancangan Web</a>
         </div>
-    </section>
-
-    <!--Headline-->
-    <h1 class="ml-15 mt-8 font-mono text-black font-extrabold text-[32px]">
-      Materi E-commerce
-    </h1>
-    
+        <!--Headline-->
+    <h1 class="max-w-290.25 ml-auto mr-auto mt-8 font-mono text-black font-extrabold text-[32px]">
+           Materi Perancangan Web
+         </h1>
+         
     <!--Table-->
-	<section class="bg-white p-4 rounded-[14px] shadow mt-8">
-
+	<section class="bg-white p-4 rounded-[14px] shadow mt-8 w-290.25 ml-auto mr-auto font-mono">
 			<table class="w-full table-auto">
 				<thead>
 					<tr class="border-b-2 border-[#eef2f7]">
-						<th class="text-left p-4 text-[#5f7084]">Nama Matakuliah</th>
+						<th class="text-left p-4 text-[#5f7084]">Nama Materi</th>
 						<th class="text-left p-4 text-[#5f7084]">BAB</th>
 						<th class="text-left p-4 text-[#5f7084]">Dosen</th>
 						<th class="text-left p-4 text-[#5f7084]">Terakhir Update</th>
@@ -110,135 +106,150 @@
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Pengantar dan Konsep Dasar</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Pengenalan Dasar HTML</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">1</td>
 						<td class="px-4 py-5">Prof. Yoga</td>
 						<td class="px-4 py-5">Oct 12, 2023</td>
             <td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>
 
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Ruang-Lingkup E-commerce</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Tag / Elemen-elemen HTML</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">1</td>
 						<td class="px-4 py-5">Dr. Sarah Chan</td>
 						<td class="px-4 py-5">Nov 16, 2023</td>
             <td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>
 
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Keamanan E-commerce dan E-money</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Cascading Style Sheet (CSS)</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">2</td>
 						<td class="px-4 py-5">Prof. Ridho</td>
 						<td class="px-4 py-5">Jan 18, 2024</td>
             <td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>
 
 					<tr class="border-b border-[#eef2f7]">
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Interaksi sosial dan E-commerce</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Class, Id & Atribut CSS</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">2</td>
 						<td class="px-4 py-5">Dr. Dinda</td>
 						<td class="px-4 py-5">Feb 20, 2024</td>
             <td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>
 
 					<tr>
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Enterprise Resource Planning (ERP)</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Framework CSS</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">3</td>
 						<td class="px-4 py-5">Prof. Umi</td>
 						<td class="px-4 py-5">Mar 04, 2024</td>
 						<td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
-					</tr>					
+					</tr>								
           
           <tr>
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Supply Chain Management (SCM)</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Bootstrap</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">3</td>
 						<td class="px-4 py-5">Prof. Umi</td>
 						<td class="px-4 py-5">Mar 04, 2024</td>
 						<td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
-						</td>
-					</tr>					
-          
-          <tr>
-						<td class="px-4 py-5">
-							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Customer Relationship Management (CRM)</a>
-							</div>
-						</td>
-						<td class="px-4 py-5">3</td>
-						<td class="px-4 py-5">Prof. Umi</td>
-						<td class="px-4 py-5">Mar 04, 2024</td>
-						<td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>          
           <tr>
 						<td class="px-4 py-5">
 							<div class="flex items-center gap-3">
-								<img src="Assets/Container.png" class="w-3 h-4"/>
-								<a href="#" class="hover:text-indigo-600">Implementasi E-commerce dan Kebutuhan</a>
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Tailwind</a>
 							</div>
 						</td>
 						<td class="px-4 py-5">3</td>
 						<td class="px-4 py-5">Prof. Umi</td>
 						<td class="px-4 py-5">Mar 04, 2024</td>
 						<td class="px-4 py-5 text-center">
-							<button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
-                <img src="Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
-              </button>
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
+						</td>
+					</tr>
+           <tr>
+						<td class="px-4 py-5">
+							<div class="flex items-center gap-3">
+								<img src="../Assets/Container.png" class="w-3 h-4"/>
+								<a href="../Isi-materi/isi.html" class="hover:text-indigo-600">Interaksi Javascript</a>
+							</div>
+						</td>
+						<td class="px-4 py-5">3</td>
+						<td class="px-4 py-5">Prof. Umi</td>
+						<td class="px-4 py-5">Mar 04, 2024</td>
+						<td class="px-4 py-5 text-center">
+                            <a href="../Materi-download/test.txt" download="text.txt">
+                              <button class="w-9 h-9 rounded-lg bg-[#eef3fb] hover:bg-[#0d6efd] hover:text-white">
+                                <img src="../Assets/Button.png" class="w-4 h-4 ml-auto mr-auto"/>
+                              </button>
+              </a>
 						</td>
 					</tr>
 
@@ -255,6 +266,25 @@
 			</div>
 
 		</section>
+
+    <script>
+      const contactButton = document.getElementById('contactButton');
+      const contactMenu = document.getElementById('contactMenu');
+
+      if (contactButton && contactMenu) {
+        contactButton.addEventListener('click', function (event) {
+          event.stopPropagation();
+          contactMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', function (event) {
+          const target = event.target;
+          if (!contactMenu.contains(target) && !contactButton.contains(target)) {
+            contactMenu.classList.add('hidden');
+          }
+        });
+      }
+    </script>
 
     <!--footer-->
           <footer class="bg-[#002244] text-white font-mono mt-20 w-full pt-16 pb-8">
